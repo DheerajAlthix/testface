@@ -1,7 +1,8 @@
 import os
-DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = [f'{os.environ.get('ALLOWED_HOSTS')}']
+DEBUG = os.environ.get('DEBUG') == 'True'  # Converts it to actual boolean
+
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
 CORS_ALLOW_ALL_ORIGINS = True
 
