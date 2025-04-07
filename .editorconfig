@@ -1,0 +1,29 @@
+# Top-level configuration file
+root = true
+
+# General settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Indentation for Python files
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+
+# Indentation for JSON, YAML, Markdown
+[*.{json,yaml,yml,md}]
+indent_style = space
+indent_size = 2
+
+# Exclude minified JS files from whitespace trimming
+[*.min.js]
+trim_trailing_whitespace = false
+
+# Settings for text files
+[*.txt]
+charset = utf-8
+trim_trailing_whitespace = false
