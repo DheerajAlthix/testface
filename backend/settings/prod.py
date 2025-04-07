@@ -2,23 +2,24 @@ from .base import *
 
 DEBUG=True
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': 'db',
-#         'PORT': 5432,
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / "db.sqlite3",  # Stores the database in the project root
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'riddhi',
+        'USER': 'riddhi_user',
+        'PASSWORD': 'joOCvRRvhJ0Q95Gmb8ctNLpZ3KaHG64m',
+        'HOST': 'dpg-cvpoj2qdbo4c7393e76g-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / "db.sqlite3",  # Stores the database in the project root
+#     }
+# }
 
 
 
