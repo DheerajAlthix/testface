@@ -1,6 +1,7 @@
 DEBUG = False
+import os
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [f'{os.environ.get('ALLOWED_HOSTS')}']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -28,6 +29,6 @@ CORS_ALLOW_METHODS = (
 
 # settings.py
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC' 
+TIME_ZONE = 'UTC'
 USE_I18N = True
-USE_TZ = False  
+USE_TZ = False
