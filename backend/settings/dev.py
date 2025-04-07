@@ -2,7 +2,7 @@ import os
 
 DEBUG = os.environ.get('DEBUG') == 'True'  # Converts it to actual boolean
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'https://testface-6t3o.onrender.com').split(',')
 
 CORS_ALLOW_ALL_ORIGINS = True
 
