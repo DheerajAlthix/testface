@@ -1,5 +1,5 @@
-DEBUG = False
 import os
+DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = [f'{os.environ.get('ALLOWED_HOSTS')}']
 
