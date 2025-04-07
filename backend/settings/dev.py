@@ -1,8 +1,5 @@
 import os
 
-DEBUG = os.environ.get('DEBUG') == 'True'  # Converts it to actual boolean
-
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'https://testface-6t3o.onrender.com').split(',')
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -12,7 +9,7 @@ APPEND_SLASH = False
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8081",  # Replace with Expo URL if using Expo
-    "http://127.0.0.1:8000",  # Replace with actual IP if testing on device
+    "https://testface-6t3o.onrender.com",  # Replace with actual IP if testing on device
 ]
 
 CORS_ALLOWED_ORIGINS = ['http://localhost:8001']
@@ -26,6 +23,8 @@ CORS_ALLOW_METHODS = (
     "POST",
     "PUT",
 )
+DEBUG = os.environ.get('DEBUG') == 'True'  # Converts it to actual boolean
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1,https://testface-6t3o.onrender.com").split(",")
 
 
 # settings.py
